@@ -1,0 +1,23 @@
+<section>
+    <h2>Criar Nova Reserva</h2>
+    <form [formGroup]="reservaForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="nomeHospede">Nome do Hóspede:</label>
+        <input type="text" id="nomeHospede" formControlName="nomeHospede">
+      </div>
+      <div>
+        <label for="dataInicio">Data de Início:</label>
+        <input type="date" id="dataInicio" formControlName="dataInicio">
+      </div>
+      <div>
+        <label for="dataFim">Data de Fim:</label>
+        <input type="date" id="dataFim" formControlName="dataFim">
+      </div>
+      <div>
+        <label for="quantidadePessoas">Quantidade de Pessoas:</label>
+        <input type="number" id="quantidadePessoas" formControlName="quantidadePessoas">
+      </div>
+      <button type="submit">Criar Reserva</button>
+    </form>
+  </section>
+  
