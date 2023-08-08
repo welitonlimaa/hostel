@@ -32,4 +32,8 @@ export class ReservaService {
   cancelReserva(id: number): Observable<Reserva> {
     return this.http.delete<Reserva>(`${this.apiUrl}/reservas/${id}/cancelar`);
   }
+
+  getReservasByStatus(status: string): Observable<Reserva[]> {
+    return this.http.get<Reserva[]>(`${this.apiUrl}/reservas/status?status=${status}`);
+  }
 }

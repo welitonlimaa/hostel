@@ -1,0 +1,38 @@
+<section>
+    <h2>Painel de Reservas</h2>
+    <div>
+      <label for="status">Selecionar Status:</label>
+      <select id="status" [(ngModel)]="selectedStatus">
+        <option value="CONFIRMADA">Confirmada</option>
+        <option value="PENDENTE">Pendente</option>
+        <option value="CANCELADA">Cancelada</option>
+      </select>
+      <button (click)="listarReservasPorStatus()">Listar</button>
+    </div>
+    <div *ngIf="reservas.length > 0">
+      <h3>Reservas com Status: {{ selectedStatus }}</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome do Hóspede</th>
+            <th>Data de Início</th>
+            <th>Data de Fim</th>
+            <th>Quantidade de Pessoas</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let reserva of reservas">
+            <td>{{ reserva.id }}</td>
+            <td>{{ reserva.nomeHospede }}</td>
+            <td>{{ reserva.dataInicio }}</td>
+            <td>{{ reserva.dataFim }}</td>
+            <td>{{ reserva.quantidadePessoas }}</td>
+            <td>{{ reserva.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
