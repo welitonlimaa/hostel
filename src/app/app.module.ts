@@ -41,7 +41,7 @@ import { PainelComponent } from './painel/painel.component';
     FormsModule,
     ReactiveFormsModule,
     MatTableModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -34,6 +34,7 @@ export class CriarReservaComponent implements OnInit {
         () => {
           console.log('Reserva criada com sucesso!');
           this.reservaForm.reset();
+          window.location.reload();
         },
         error => {
           console.error('Erro ao criar reserva:', error);
