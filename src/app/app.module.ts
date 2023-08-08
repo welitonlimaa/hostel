@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule} from '@angular/material/card';
 import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { CriarReservaComponent } from './criar-reserva/criar-reserva.component';
 import { ListarReservasComponent } from './listar-reservas/listar-reservas.component';
@@ -38,6 +40,8 @@ import { PainelComponent } from './painel/painel.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
-<section>
-    <h2>Lista de Reservas</h2>
+<section class="main-container">
+  <div class="create-container">
+  <h2>Lista de Reservas</h2>
     <table>
       <thead>
         <tr>
@@ -21,11 +22,12 @@
           <td>{{ reserva.quantidadePessoas }}</td>
           <td>{{ reserva.status }}</td>
           <td>
-            <button (click)="reserva.id !== undefined && atualizarReserva(reserva.id)">Pendente</button>
-            <button (click)="reserva.id !== undefined && cancelarReserva(reserva.id)">Cancelar</button>
+            <button mat-raised-button color="primary" (click)="reserva.id !== undefined && atualizarReserva(reserva.id)">Pendente</button>
+            <button mat-raised-button color="warn" (click)="reserva.id !== undefined && cancelarReserva(reserva.id)">Cancelar</button>
           </td>
         </tr>
       </tbody>
     </table>
-  </section>
+  </div>
+</section>
   

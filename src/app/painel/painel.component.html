@@ -1,14 +1,15 @@
-<section>
+<section class="main-container">
+  <div class="create-container">
     <h2>Painel de Reservas</h2>
-    <div>
+    <div class="custom-select">
       <label for="status">Selecionar Status:</label>
-      <select id="status" [(ngModel)]="selectedStatus">
+      <select id="status" [(ngModel)]="selectedStatus" class="select-input">
         <option value="CONFIRMADA">Confirmada</option>
         <option value="PENDENTE">Pendente</option>
         <option value="CANCELADA">Cancelada</option>
       </select>
-      <button (click)="listarReservasPorStatus()">Listar</button>
-    </div>
+      <button mat-raised-button color="primary" (click)="listarReservasPorStatus()">Listar</button>
+    </div>    
     <div *ngIf="reservas.length > 0">
       <h3>Reservas com Status: {{ selectedStatus }}</h3>
       <table>
@@ -34,5 +35,6 @@
         </tbody>
       </table>
     </div>
-  </section>
+  </div>
+</section>
   
