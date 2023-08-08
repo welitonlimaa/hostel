@@ -1,37 +1,37 @@
 .main-container {
-    width: 80rem;
-    background-image: url("../../assets/images/bg-2.svg");
-    background-position: left;
-    background-repeat: no-repeat;
-    font-size: 1.4rem;
+  width: 80rem;
+  background-image: url("../../assets/images/bg-2.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  font-size: 1.4rem;
 }
 
 .create-container {
-    width: 80%;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 4rem;
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 4rem;
 }
 
 .custom-select {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
   
-  .select-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .select-input:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .select-input option {
-    font-size: 14px;
-  }
+.select-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.select-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.select-input option {
+  font-size: 14px;
+}
   
