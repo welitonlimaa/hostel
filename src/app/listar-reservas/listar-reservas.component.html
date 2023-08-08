@@ -1,0 +1,31 @@
+<section>
+    <h2>Lista de Reservas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome do Hóspede</th>
+          <th>Data de Início</th>
+          <th>Data de Fim</th>
+          <th>Quantidade de Pessoas</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reserva of reservas">
+          <td>{{ reserva.id }}</td>
+          <td>{{ reserva.nomeHospede }}</td>
+          <td>{{ reserva.dataInicio }}</td>
+          <td>{{ reserva.dataFim }}</td>
+          <td>{{ reserva.quantidadePessoas }}</td>
+          <td>{{ reserva.status }}</td>
+          <td>
+            <button (click)="reserva.id !== undefined && atualizarReserva(reserva.id)">Pendente</button>
+            <button (click)="reserva.id !== undefined && cancelarReserva(reserva.id)">Cancelar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  

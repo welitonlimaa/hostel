@@ -14,6 +14,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { CriarReservaComponent } from './criar-reserva/criar-reserva.component';
+import { ListarReservasComponent } from './listar-reservas/listar-reservas.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CriarReservaComponent } from './criar-reserva/criar-reserva.component';
     HeaderComponent,
     FooterComponent,
     ReservaListComponent,
-    CriarReservaComponent
+    CriarReservaComponent,
+    ListarReservasComponent
   ],
   imports: [
     BrowserModule,
