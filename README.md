@@ -22,7 +22,7 @@ O Hostel Reservas é um aplicativo de gerenciamento de reservas para um hostel d
 ## Deploy
 - Link: https://hostel-reservas.vercel.app/
 
-## Backend
+## Backend(Api)
 
 - Projeto: https://github.com/welitonlimaa/hostel-api
 
