@@ -1,6 +1,6 @@
 # Hostel Reservas
 
-O Hostel Reservation System é um aplicativo de gerenciamento de reservas para um hostel de temporada. Permite que os hóspedes façam reservas para estadias em datas específicas, com informações sobre o hóspede e a quantidade de pessoas.
+O Hostel Reservas é um aplicativo de gerenciamento de reservas para um hostel de temporada. Permite que os hóspedes façam reservas para estadias em datas específicas, com informações sobre o hóspede e a quantidade de pessoas.
 
 ## Tecnologias Utilizadas
 
